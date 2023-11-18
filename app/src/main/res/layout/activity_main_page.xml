@@ -215,12 +215,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address"
-                android:layout_marginRight="90dp"
+                android:text="City"
+                android:layout_marginRight="125dp"
                 android:textSize="20dp"
                 />
             <EditText
-                android:layout_width="150dp"
+                android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/address"
                 android:singleLine="true"

@@ -71,7 +71,11 @@ public String[] hostels={"Hostel No 1","Hostel No 2","Hostel No 3","Hostel No 4"
                 } else if (rs.isChecked()) {
                     course = "Research";
                 }
-
+                if(address.getText().toString().toLowerCase().trim().equals("chandigarh") || address.getText().toString().trim().toLowerCase().equals("mohali"))
+                {
+                    Toast.makeText(MainPage.this, "Sorry, You cant take Hostel", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 if (!name.getText().toString().isEmpty() && !dept.getText().toString().isEmpty() && !classname.getText().toString().isEmpty() &&
                         !meritRank.getText().toString().isEmpty() && !address.getText().toString().isEmpty() && !gender.isEmpty()) {
 
